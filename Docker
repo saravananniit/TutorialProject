@@ -1,0 +1,5 @@
+From openjdk
+WORKDIR usr/lib
+ADD ./target/tutorialsproject-0.0.1-SNAPSHOT.jar /usr/lib/tutorialsproject-0.0.1-SNAPSHOT.jar
+EXPOSE 8081
+ENTRYPOINT["java","-jar","tutorialsproject-0.0.1-SNAPSHOT.jar"]
